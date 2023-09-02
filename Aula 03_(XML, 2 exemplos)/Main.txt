@@ -1,0 +1,44 @@
+import xml.etree.ElementTree as ET
+
+class ExtracaoDeDados:
+    def __init__(self, arquivo_xml):
+        self.arquivo_xml = arquivo_xml
+        self.dados_passageiros = []
+        
+    def carregar_dados(self):
+        tree = ET.parse(self.arquivo_xml)
+        root = tree.getroot()
+        
+        for elem_passageiro in root.findall('passageiro'):
+            passageiro = {
+                'nome': elem_passageiro.find('nome').text,
+                'idade': int(elem_passageiro.find('idade').text),
+                'numero_ticket': int(elem_passageiro.find('numero_ticket').text),
+                'origem': elem_passageiro.find('origem').text,
+                'destino': elem_passageiro.find('destino').text
+            }
+            self.dados_passageiros.append(passageiro)
+                    
+    def obter_contagem_passageiros(self):
+        return len(self.dados_passageiros)
+    
+    def obter_origens_destinos(self):
+        origens = set()
+        destinos = set()
+        
+        for passageiro in self.dados_passageiros:
+            origens.add(passageiro['origem'])
+            destinos.add(passageiro['destino'])
+            
+        return list(origens), list(destinos)
+
+caminho_arquivo_xml = 'passageiros.xml' 
+extrator_dados = ExtracaoDeDados(caminho_arquivo_xml)
+extrator_dados.carregar_dados()
+
+contagem_passageiros = extrator_dados.obter_contagem_passageiros()
+origens, destinos = extrator_dados.obter_origens_destinos()
+
+print(f"Número de passageiros: {contagem_passageiros}")
+print("Origens:", origens)
+print("Destinos:", destinos)

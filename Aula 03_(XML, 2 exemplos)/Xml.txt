@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<passageiros>
+    <passageiro>
+        <nome>João</nome>
+        <idade>20</idade> 
+        <numero_ticket>14652</numero_ticket> 
+        <origem>São Paulo</origem>  
+        <destino>Natal</destino>
+    </passageiro>
+    <passageiro>
+        <nome>Gabriel</nome>
+        <idade>21</idade> 
+        <numero_ticket>13456</numero_ticket> 
+        <origem>Campina Grande</origem>  
+        <destino>Rio de Janeiro</destino>
+    </passageiro>
+    <passageiro>
+        <nome>Temí</nome>
+        <idade>23</idade> 
+        <numero_ticket>62549</numero_ticket> 
+        <origem>Belo Horizonte</origem>  
+        <destino>Porto Velho</destino>
+    </passageiro>
+    <passageiro>
+        <nome>Milena</nome>
+        <idade>25</idade> 
+        <numero_ticket>66578</numero_ticket> 
+        <origem>Petrolina</origem>  
+        <destino>Gramado</destino>
+    </passageiro>
+    <passageiro>
+        <nome>Pedro Hugo</nome>
+        <idade>36</idade> 
+        <numero_ticket>15698</numero_ticket> 
+        <origem>Rio de Janeiro</origem>  
+        <destino>Canidé</destino>
+    </passageiro>
+</passageiros>
