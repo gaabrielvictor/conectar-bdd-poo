@@ -1,4 +1,4 @@
-# Conectar-BDD-Com-POO 
+# CONECTAR-BDD-COM-POO 
 
 - Aula 1 (Persistência de dados, 4 exemplos) ✅
 - Aula 2 (Tipos de dados, 3 exemplos) ✅
