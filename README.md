@@ -9,3 +9,5 @@
 - Etapa 2 do projeto ✅
 - Aula 6 (Python + SQL, 1 exemplo) ✅
 - Aula 7 (JPA, mapa mental) ✅
+
+- Alunos Participantes do projeto : Gabriel Victor, João Gabriel, Temístocles Maciel, Mylena Torres. 
